@@ -78,8 +78,8 @@
                     </div>
                     <div class="col-xs-12 col-md-8" itemprop="description">
                         <h1 id="biography">Biography</h1>
-                        <p>I am currently a first-year CS Ph.D student at University of Calofornia, Los Angeles (UCLA), and had the fortune to be advised by Prof. <a href="http://web.cs.ucla.edu/~yzsun/">Yizhou Sun</a>. Previously, I received my CS bachelor degree in Peking University, advised by Prof. <a href="http://www.liuxuanzhe.com/">Xuanzhe Liu</a>.</p>
-                        <p>My research mainly focus on making deep learning utilize data's structure information and learn better representation for discrete structure, with their applications in language processing, graph mining, etc.</p>
+                        <p>I am currently a second-year CS Ph.D student at University of Calofornia, Los Angeles (UCLA), and had the fortune to be advised by Prof. <a href="http://web.cs.ucla.edu/~yzsun/">Yizhou Sun</a>. Previously, I received my CS bachelor degree in Peking University, advised by Prof. <a href="http://www.liuxuanzhe.com/">Xuanzhe Liu</a>.</p>
+                        <p>My research mainly focus on graph neural networks, with their applications in language processing, graph mining, etc.</p>
                     </div>
                     <div class="col-md-12">
                         <div class="col-sm-5">
@@ -149,6 +149,25 @@
                         <div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
                             <div class="row">
                                 <div class="col-md-12">
+                                    <h5 class="article-title" itemprop="name">Layer-Dependent Importance Sampling for Training Deep and Large Graph Convolutional Networks </h5>
+                                    <div class="pub-authors" itemprop="author">
+                                        Difan Zou*, 
+                                        <u>
+                                            <b>Ziniu Hu</b>
+                                        </u>*, Yewen Wang, Song Jiang, Yizhou Sun, Quanquan Gu 
+                                        <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1907.00505">PDF</a>
+				                        <a class="btn btn-primary btn-outline btn-xs" href="https://github.com/acbull/HiCE">CODE</a></div>
+                                <div class="pub-publication"> The Conference on Neural Information Processing Systems (NeurIPS 2019)</div></div>
+                                <div class="col-md-3" style="top:20px">
+                                    <img src="/img/headers/ladies.png" class="pub-banner" itemprop="image" /></div>
+                                <div class="col-md-8" style="top:10px">
+                                    <div class="pub-abstract" itemprop="text">Training GCNs for a large graph is still a challenge. Original full-batch GCN training requires calculating the representation of all the nodes in the graph per GCN layer, which brings in high computation and memory costs. To alleviate this issue, we propose a new effective sampling algorithm called LAyer-Dependent ImportancE Sampling (LADIES). Based on the sampled nodes in the upper layer, LADIES selects nodes that are in the neighborhood of these nodes and uses the constructed subgraph to compute the importance probability. Then, it samples a fixed number of nodes according to the probability for the whole layer, and recursively conducts such procedure per layer to construct the whole computation graph. We prove theoretically and experimentally, that our proposed sampling algorithm outperforms the previous sampling methods regarding both time and memory. Furthermore, LADIES is shown to have better generalization accuracy than original full-batch GCN, due to its stochastic nature. </div></div>
+                            </div>
+                        </div>
+
+                        <div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                            <div class="row">
+                                <div class="col-md-12">
                                     <h5 class="article-title" itemprop="name">Few-Shot Representation Learning for Out-Of-Vocabulary Words</h5>
                                     <div class="pub-authors" itemprop="author">
                                         <u>
@@ -157,7 +176,7 @@
                                         , Ting Chen, Kai-Wei Chang, Yizhou Sun
                                         <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1907.00505">PDF</a>
 				                        <a class="btn btn-primary btn-outline btn-xs" href="https://github.com/acbull/HiCE">CODE</a></div>
-                                <div class="pub-publication">The 57th Annual Meeting of the Association for Computational Linguistics (ACL 2019)</div></div>
+                                <div class="pub-publication">The Annual Meeting of the Association for Computational Linguistics (ACL 2019)</div></div>
                                 <div class="col-md-3" style="top:20px">
                                     <img src="/img/headers/fewshot.png" class="pub-banner" itemprop="image" /></div>
                                 <div class="col-md-8" style="top:10px">
@@ -250,7 +269,7 @@
                                         </u>
                                         , Weiqing Liu, Jiang Bian, Xuanzhe Liu, Tie-Yan Liu
                                         <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1712.02136">PDF</a></div>
-                                    <div class="pub-publication">the 11th ACM International Conference on Web Search and Data Mining (WSDM 2018).</div></div>
+                                    <div class="pub-publication">the International Conference on Web Search and Data Mining (WSDM 2018).</div></div>
                                 <div class="col-md-3" style="top:20px">
                                     <img src="/img/headers/profit.PNG" class="pub-banner" itemprop="image" /></div>
                                 <div class="col-md-8" style="top:10px">
