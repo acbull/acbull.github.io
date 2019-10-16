@@ -51,10 +51,6 @@
                                 <span>Publications</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="/#preprints" data-target="#preprints">
-                                <span>Preprints</span></a>
-                        </li>
-                        <li class="nav-item">
                             <a href="/#contact" data-target="#contact">
                                 <span>Contact</span></a>
                         </li>
@@ -71,15 +67,21 @@
                             <div class="portrait" itemprop="image" style="background-image: url('/img/me.jpg');"></div>
                             <div class="portrait-title">
                                 <h2 itemprop="name">Ziniu Hu</h2>
-                                <h3 itemprop="jobTitle">Ph.D. of Computer Science</h3>
-                                <h3 itemprop="worksFor">University of California
-                                    <br>Los Angeles</h3></div>
+                                <h3 itemprop="jobTitle">CS Ph.D. Student</h3>
+                                <h3 itemprop="worksFor">University of California<br>Los Angeles</h3>
+                            </div>
+                            <p>
+                                <a href="https://github.com/acbull"><i class="fa fa-github fa-2x"></i></a> &nbsp &nbsp 
+                                <a href="https://scholar.google.com/citations?user=x6ct1CsAAAAJ&hl=en"><i class="ai ai-google-scholar ai-2x"></i></a> 
+                                <!-- &nbsp
+                                <a href="/pdf/cv.pdf"><i class="ai ai-cv ai-2x"></i></a> &nbsp -->
+                            </p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-8" itemprop="description">
                         <h1 id="biography">Biography</h1>
-                        <p>I am currently a first-year CS Ph.D student at University of Calofornia, Los Angeles (UCLA), and had the fortune to be advised by Prof. <a href="http://web.cs.ucla.edu/~yzsun/">Yizhou Sun</a>. Previously, I received my CS bachelor degree in Peking University, advised by Prof. <a href="http://www.liuxuanzhe.com/">Xuanzhe Liu</a>.</p>
-                        <p>My research mainly focus on making deep learning utilize data's structure information and learn better representation for discrete structure, with their applications in language processing, graph mining, etc.</p>
+                        <p>I am currently a second-year CS Ph.D student at University of Calofornia, Los Angeles (UCLA), and had the fortune to be advised by Prof. <a href="http://web.cs.ucla.edu/~yzsun/">Yizhou Sun</a>. Previously, I received my CS bachelor degree in Peking University, advised by Prof. <a href="http://www.liuxuanzhe.com/">Xuanzhe Liu</a>.</p>
+                        <p>My research mainly focus on graph neural networks, with their applications in language processing, graph mining, etc.</p>
                     </div>
                     <div class="col-md-12">
                         <div class="col-sm-5">
@@ -125,7 +127,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <!-- <div class="col-md-12">
                         <div class="col-sm-12">
                             <h3>Awards</h3>
                             <ul class="ul-interests">
@@ -136,7 +138,7 @@
                                 <li>2015, May Forth Scholarship of Peking University</li>
                                 <li>2014, First Prize of Chinese Physics Olympiad, Zhejiang District</li></ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -152,19 +154,32 @@
                         <div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
                             <div class="row">
                                 <div class="col-md-12">
+                                    <h5 class="article-title" itemprop="name">Layer-Dependent Importance Sampling for Training Deep and Large Graph Convolutional Networks </h5>
+                                    <div class="pub-authors" itemprop="author">
+                                        Difan Zou*, 
+                                        <u><b>Ziniu Hu</b></u>*, Yewen Wang, Song Jiang, Yizhou Sun, Quanquan Gu 
+                                <div class="pub-publication"> The Conference on Neural Information Processing Systems (NeurIPS 2019)</div></div>
+                                <div class="col-md-3" style="top:20px">
+                                    <img src="/img/headers/ladies.png" class="pub-banner" itemprop="image" /></div>
+                                <div class="col-md-8" style="top:10px">
+                                    <div class="pub-abstract" itemprop="text">Original full-batch GCN training requires calculating the representation of all the nodes in the graph per layer, which brings in high computation costs. To solve it, we propose LAyer-Dependent ImportancE Sampling (LADIES). Based on the sampled nodes in the upper layer, LADIES selects their neighborhood nodes, constructe a bipartite subgraph and compute the importance probability accordingly. Then, it samples a fixed number of nodes by the calculated probability, and recursively conducts such procedure per layer to construct the whole computation graph. We prove theoretically and experimentally, that our proposed sampling algorithm outperforms the previous sampling methods regarding time, memory and accuracy.</div></div>
+                            </div>
+                        </div>
+
+                        <div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                            <div class="row">
+                                <div class="col-md-12">
                                     <h5 class="article-title" itemprop="name">Few-Shot Representation Learning for Out-Of-Vocabulary Words</h5>
                                     <div class="pub-authors" itemprop="author">
-                                        <u>
-                                            <b>Ziniu Hu</b>
-                                        </u>
+                                        <u><b>Ziniu Hu</b></u>
                                         , Ting Chen, Kai-Wei Chang, Yizhou Sun
-                                        <!-- <a class="btn btn-primary btn-outline btn-xs" href="/pdf/unbias.pdf">PDF</a>
-				        <a class="btn btn-primary btn-outline btn-xs" href="https://github.com/acbull/Unbiased_LambdaMart">CODE</a></div> -->
-                                <div class="pub-publication">The 57th Annual Meeting of the Association for Computational Linguistics (ACL 2019)</div></div>
+                                        <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1907.00505">PDF</a>
+				                        <a class="btn btn-primary btn-outline btn-xs" href="https://github.com/acbull/HiCE">CODE</a></div>
+                                <div class="pub-publication">The Conference of the Association for Computational Linguistics (ACL 2019)</div></div>
                                 <div class="col-md-3" style="top:20px">
                                     <img src="/img/headers/fewshot.png" class="pub-banner" itemprop="image" /></div>
                                 <div class="col-md-8" style="top:10px">
-                                    <div class="pub-abstract" itemprop="text">When a word occurs only a few times in the corpus, the existing embedding techniques is not accurate. In this paper, we formulate the learning of OOV embedding as a few-shot regression problem by fitting a representation function to predict an oracle embedding vector (defined as embedding trained with abundant observations) based on limited contexts. Specifically, we propose a novel hierarchical attention network-based embedding framework to serve as the neural regression function, in which the context information of a word is encoded and aggregated from K observations. Furthermore, we propose to use Model-Agnostic Meta-Learning (MAML) for adapting the learned model to the new corpus fast and robustly.</div></div>
+                                    <div class="pub-abstract" itemprop="text">When a word occurs only a few times in the corpus, the existing embedding technique is not accurate. In this paper, we formulate the learning of OOV embedding as a few-shot regression problem by fitting a representation function to predict an oracle embedding vector (defined as embedding trained with abundant observations) based on limited contexts. Specifically, we propose a hierarchical attention network to serve as the neural regression function, in which the context information of a word is encoded and aggregated from K observations. Furthermore, we propose to use Model-Agnostic Meta-Learning (MAML) for adapting the learned model to the new corpus fast and robustly.</div></div>
                             </div>
                         </div>
 
@@ -174,9 +189,7 @@
                                 <div class="col-md-12">
                                     <h5 class="article-title" itemprop="name">Unsupervised Pre-Training of Graph Convolutional Networks</h5>
                                     <div class="pub-authors" itemprop="author">
-                                        <u>
-                                            <b>Ziniu Hu</b>
-                                        </u>
+                                        <u><b>Ziniu Hu</b></u>
                                         , Changjun Fan, Ting Chen, Kai-Wei Chang, Yizhou Sun
                                         <a class="btn btn-primary btn-outline btn-xs" href="http://arxiv.org/abs/1905.13728">PDF</a>
                                 <div class="pub-publication">ICLR 2019 Workshop: Representation Learning on Graphs and Manifolds</div></div>
@@ -193,11 +206,9 @@
                                 <div class="col-md-12">
                                     <h5 class="article-title" itemprop="name">Unbiased LambdaMART: An Unbiased Pairwise Learning-to-Rank Algorithm</h5>
                                     <div class="pub-authors" itemprop="author">
-                                        <u>
-                                            <b>Ziniu Hu</b>
-                                        </u>
+                                        <u><b>Ziniu Hu</b></u>
                                         , Yang Wang, Qu Peng, Hang Li
-                                        <a class="btn btn-primary btn-outline btn-xs" href="/pdf/unbias.pdf">PDF</a>
+                                        <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1809.05818">PDF</a>
 				        <a class="btn btn-primary btn-outline btn-xs" href="https://github.com/acbull/Unbiased_LambdaMart">CODE</a></div>
                                 <div class="pub-publication">The Web Conference 2019 (WWW 2019)</div></div>
                                 <div class="col-md-3" style="top:20px">
@@ -211,11 +222,9 @@
                                 <div class="col-md-12">
                                     <h5 class="article-title" itemprop="name">Emoji-Powered Representation Learning for Cross-Lingual Sentiment Classification</h5>
                                     <div class="pub-authors" itemprop="author">Zhenpeng Chen*, Sheng Shen*,
-                            		<u>
-                                            <b>Ziniu Hu</b>
-                                        </u>
+                            		<u><b>Ziniu Hu</b></u>
                                         , Xuan Lu, Qiaozhu Mei, Xuanzhe Liu
-					<a class="btn btn-primary btn-outline btn-xs" href="/pdf/www19-emoji.pdf">PDF</a>
+					<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1806.02557">PDF</a>
 				        <a class="btn btn-primary btn-outline btn-xs" href="https://github.com/sIncerass/ELSA">CODE</a></div>
                                   <div class="pub-publication">The Web Conference 2019 (WWW 2019, Best Paper Award)</div></div>
                                 <div class="col-md-3" style="top:20px">
@@ -225,7 +234,7 @@
                                         representation learning method that uses emoji prediction as an instrument to learn respective sentiment-aware representations for each language.</div></div>
                             </div>
                         </div>
-                        <div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                        <!-- <div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
                             <div class="row">
                                 <div class="col-md-12">
                                     <h5 class="article-title" itemprop="name">FaceOff: Assisting the Manifestation Design of Web Graphical User Interface</h5>
@@ -242,18 +251,16 @@
                                 <div class="col-md-8" style="top:10px">
                                     <div class="pub-abstract" itemprop="text">Designing desirable and aesthetical manifestation of web graphic user interfaces (GUI) is a challenging task for web developers. To tackle this issues, we propose FaceOff, a data-driven automation system that assists the manifestation design of web GUI by retrieving suitable and harmonious GUI templatese, and thus alleviate the developer efforts.</div></div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
                             <div class="row">
                                 <div class="col-md-12">
                                     <h5 class="article-title" itemprop="name">Listening to Chaotic Whispers: A Deep Learning Framework for News-oriented Stock Trend Prediction</h5>
                                     <div class="pub-authors" itemprop="author">
-                                        <u>
-                                            <b>Ziniu Hu</b>
-                                        </u>
+                                        <u><b>Ziniu Hu</b></u>
                                         , Weiqing Liu, Jiang Bian, Xuanzhe Liu, Tie-Yan Liu
-                                        <a class="btn btn-primary btn-outline btn-xs" href="/pdf/wsdm18-stock.pdf">PDF</a></div>
-                                    <div class="pub-publication">the 11th ACM International Conference on Web Search and Data Mining (WSDM 2018).</div></div>
+                                        <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1712.02136">PDF</a></div>
+                                    <div class="pub-publication">The International Conference on Web Search and Data Mining (WSDM 2018).</div></div>
                                 <div class="col-md-3" style="top:20px">
                                     <img src="/img/headers/profit.PNG" class="pub-banner" itemprop="image" /></div>
                                 <div class="col-md-8" style="top:10px">
@@ -265,9 +272,7 @@
                                 <div class="col-md-12">
                                     <h5 class="article-title" itemprop="name">Aladdin: Automating Release of Deep-Link APIs on Android</h5>
                                     <div class="pub-authors" itemprop="author">Yun Ma,
-                                        <u>
-                                            <b>Ziniu Hu</b>
-                                        </u>
+                                        <u><b>Ziniu Hu</b></u>
                                         , Yunxin Liu, Tao Xie, Xuanzhe Liu
 					<a class="btn btn-primary btn-outline btn-xs" href="/pdf/www18-aladdin.pdf">PDF</a>
 				        <a class="btn btn-primary btn-outline btn-xs" href="https://github.com/pkuoslab/Paladin">CODE</a></div>
@@ -282,7 +287,7 @@
                 </div>
             </div>
         </section>
-        <section id="preprints" class="home-section">
+        <!-- <section id="preprints" class="home-section">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-4 section-heading">
@@ -309,7 +314,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section id="contact" class="home-section">
             <div class="container">
                 <div class="row">
@@ -317,6 +322,7 @@
                         <h1>Contact</h1></div>
                     <div class="col-xs-12 col-md-8">
                         <ul class="fa-ul">
+                            
                             <li>
                                 <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
                                 <span>
@@ -328,28 +334,14 @@
                                     <a href="tel:18810999022">424-535-9355</a></span>
                             </li>
                             <li>
-                                <i class="fa-li fa fa-skype fa-2x" aria-hidden="true"></i>
-                                <span>
-                                    <a href="skype:acbull?call">acbull</a></span>
-                            </li>
-                            <li>
                                 <i class="fa-li fa fa-map-marker fa-2x" aria-hidden="true"></i>
                                 <span>3551 (ScAI Lab), Bolter Hall, UCLA, CA, 90095</span></li>
-                            <!-- <li>
-                            <i class="fa-li fa fa-github fa-2x" aria-hidden="true"></i>
-                            <span>
-                            <a href="https://github.com/tpBull" target="_blank">My github repositories</a></span></li>-->
-                            <li>
-                                <i class="fa-li fa fa-google fa-2x" aria-hidden="true"></i>
-                                <span>
-                                    <a href="https://scholar.google.com/citations?user=x6ct1CsAAAAJ&amp;hl=en">My Google Scholar Profile</a></span>
-                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <div style="width: 50%; text-align: center; margin: 0 auto;">
+        <div style="width: 33%; text-align: center; margin: 0 auto;">
             <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=tebCSlmqux9N9QrcNmOiT0PXzoscPYQd7ftMh0JTTv0&amp;cl=ffffff&amp;w=a"></script>
         </div>
         <br />
