@@ -165,7 +165,7 @@
                                 <div class="col-md-2" style="top:20px">
                                     <img src="/img/headers/qa.png" class="pub-banner" itemprop="image" /></div>
                                 <div class="col-md-9" style="top:10px">
-                                    <div class="pub-abstract" itemprop="text">We propose RGPT-QA to synthesize relational QA pairs from Wikipedia hyperlinks and Wikidata relation triplets for pre-training Open-Domain QA Model. RGPT-QA improves the performance of DPR model, especially for questions with long-tail relations.</div></div>
+                                    <div class="pub-abstract" itemprop="text">We propose RGPT-QA to synthesize QA pairs from relation triplets in WikiData and WikiPedia for pre-training Open-Domain QA Model and improves the QA performance, especially for questions with long-tail relations.</div></div>
                             </div>
                         </div>
 
@@ -182,7 +182,7 @@
                                 <div class="col-md-2" style="top:20px">
                                     <img src="/img/headers/gpt-intro.png" class="pub-banner" itemprop="image" /></div>
                                 <div class="col-md-9" style="top:10px">
-                                    <div class="pub-abstract" itemprop="text">We introduces a self-supervised attributed graph generation task to pre-train GNN. We factorize the likelihood of graph generation into two components: 1) attribute generation, and 2) edge generation. By modeling both components, GPT-GNN captures the inherent dependency between node attributes and graph structure during the generative process. </div></div>
+                                    <div class="pub-abstract" itemprop="text">We introduces a self-supervised attributed graph generation task to pre-train GNN. We factorize the likelihood of graph generation into two components: 1) attribute generation, and 2) edge generation, without lossing mutual dependency. </div></div>
                             </div>
                         </div>
 
@@ -204,8 +204,7 @@
                                 <div class="col-md-2" style="top:20px">
                                     <img src="/img/headers/attention.png" class="pub-banner" itemprop="image" /></div>
                                 <div class="col-md-9" style="top:10px">
-                                    <div class="pub-abstract" itemprop="text">Most GNNs are designed for homogeneous networks, in which all nodes or edges have the same feature space and representation distribution, making them infeasible for representing evolving  heterogeneous structures. 
-                                        In this paper, we present the Heterogeneous Graph Transformer architecture for modeling Web-scale heterogeneous and dynamic graphs (Microsoft Academic Graph).</div></div>
+                                    <div class="pub-abstract" itemprop="text">We present the Heterogeneous Graph Transformer architecture for modeling Web-scale heterogeneous (nodes and edges have multiple types) and dynamic graphs.</div></div>
                             </div>
                         </div>
 
@@ -222,7 +221,7 @@
                                 <div class="col-md-3" style="top:20px">
                                     <img src="/img/headers/ladies.png" class="pub-banner" itemprop="image" /></div>
                                 <div class="col-md-8" style="top:10px">
-                                    <div class="pub-abstract" itemprop="text">Full-batch GCN training requires calculating the representation of all the nodes in the graph, which brings in high computation costs. To solve it, we propose LAyer-Dependent ImportancE Sampling (LADIES). Based on the sampled nodes in the upper layer, LADIES selects their neighborhood nodes, compute the importance probability accordingly and samples a fixed number of nodes within them. We prove theoretically and experimentally, that our proposed sampling algorithm outperforms the previous sampling methods regarding time, memory and accuracy.</div></div>
+                                    <div class="pub-abstract" itemprop="text">We propose LAyer-Dependent ImportancE Sampling (LADIES). Based on the sampled nodes in the upper layer, LADIES selects their neighborhood nodes, compute the importance probability accordingly and samples a fixed number of nodes within them.</div></div>
                             </div>
                         </div>
 
@@ -239,27 +238,9 @@
                                 <div class="col-md-2" style="top:20px">
                                     <img src="/img/headers/fewshot.png" class="pub-banner" itemprop="image" /></div>
                                 <div class="col-md-9" style="top:10px">
-                                    <div class="pub-abstract" itemprop="text">When a word occurs only a few times in the corpus, the existing embedding technique is not accurate. In this paper, we formulate the learning of OOV embedding as a few-shot regression problem by fitting a representation function to predict an oracle embedding vector (defined as embedding trained with abundant observations) based on limited contexts. Specifically, we propose a hierarchical attention network to serve as the neural regression function, in which the context information of a word is encoded and aggregated from K observations. Furthermore, we propose to use Model-Agnostic Meta-Learning (MAML) for adapting the learned model to the new corpus fast and robustly.</div></div>
+                                    <div class="pub-abstract" itemprop="text">We formulate the learning of OOV embedding as a few-shot regression problem by fitting a representation function to predict an oracle embedding vector (defined as embedding trained with abundant observations) based on limited contexts. Specifically, we propose a hierarchical attention network to serve as the neural regression function, and use Model-Agnostic Meta-Learning (MAML) for adapting the learned model to the new corpus fast and robustly.</div></div>
                             </div>
                         </div>
-
-
-                        <div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h5 class="article-title" itemprop="name">Unsupervised Pre-Training of Graph Convolutional Networks</h5>
-                                    <div class="pub-authors" itemprop="author">
-                                        <u><b>Ziniu Hu</b></u>
-                                        , Changjun Fan, Ting Chen, Kai-Wei Chang, Yizhou Sun
-                                        <a class="btn btn-primary btn-outline btn-xs" href="http://arxiv.org/abs/1905.13728">PDF</a>
-                                <div class="pub-publication">ICLR 2019 Workshop: Representation Learning on Graphs and Manifolds</div></div>
-                                <div class="col-md-2" style="top:20px">
-                                    <img src="/img/headers/framework.png" class="pub-banner" itemprop="image" /></div>
-                                <div class="col-md-9" style="top:10px">
-                                    <div class="pub-abstract" itemprop="text">Training an accurate GCN model requires a large collection of labeled data and expressive features, which might not be accessible. In this paper, we show that a pre-trained GCN model can capture generic structural information of graphs and benefit downstream applications. We further explore three unsupervised tasks: 1) denoising graph reconstruction, 2) centrality score ranking, and 3) cluster detection, for building the pre-trained GCN model without human annotations.</div></div>
-                            </div>
-                        </div>
-
 
                         <div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
                             <div class="row">
@@ -274,7 +255,7 @@
                                 <div class="col-md-2" style="top:20px">
                                     <img src="/img/headers/unbias.jpg" class="pub-banner" itemprop="image" /></div>
                                 <div class="col-md-9" style="top:10px">
-                                    <div class="pub-abstract" itemprop="text">Recently a number of algorithms under the theme of `unbiased learning-to-rank' have been proposed, which can reduce position bias and train a high-performance ranker with click data in learning-to-rank. In this paper, we propose a novel framework for pairwise learning-to-rank. Our algorithm, Unbiased LambdaMART can jointly estimate the biases at click positions and the biases at unclick positions, and learn an unbiased ranker.</div></div>
+                                    <div class="pub-abstract" itemprop="text">We propose a novel framework for pairwise learning-to-rank. Our algorithm, Unbiased LambdaMART can jointly estimate the biases at click positions and the biases at unclick positions, and learn an unbiased ranker.</div></div>
                             </div>
                         </div>
                         <div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
@@ -290,7 +271,7 @@
                                 <div class="col-md-2" style="top:20px">
                                     <img src="/img/headers/emoji.jpg" class="pub-banner" itemprop="image" /></div>
                                 <div class="col-md-9" style="top:10px">
-                                    <div class="pub-abstract" itemprop="text">In this paper, we employ emojis, ubiquitous and emotional language units, as the instrument to learn both the cross-language and language-specific sentiment patterns in different languages. We propose a novel
+                                    <div class="pub-abstract" itemprop="text">We employ emojis as the instrument to learn both the cross-language and language-specific sentiment patterns in different languages. We propose a novel
                                         representation learning method that uses emoji prediction as an instrument to learn respective sentiment-aware representations for each language.</div></div>
                             </div>
                         </div>
@@ -324,7 +305,7 @@
                                 <div class="col-md-2" style="top:20px">
                                     <img src="/img/headers/profit.PNG" class="pub-banner" itemprop="image" /></div>
                                 <div class="col-md-9" style="top:10px">
-                                    <div class="pub-abstract" itemprop="text">Precise stock trend prediction is difficult since the highly volatile and non-stationary nature of stock market. The quality, trustworthiness and comprehensiveness of online content related to stock market varies drastically. To address this challenge, we designed a Hybrid Attention Networkss(HAN) to predict the stock trend based on the sequence of recent related news, with self-paced learning mechanism to guide efficient learning.</div></div>
+                                    <div class="pub-abstract" itemprop="text">We designed a Hybrid Attention Networkss(HAN) to predict the stock trend based on the sequence of recent related news, with self-paced learning mechanism to guide efficient learning.</div></div>
                             </div>
                         </div>
                     </div>
